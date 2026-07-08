@@ -1,0 +1,270 @@
+/* Banner & Slider Section */
+.banner {
+    margin: 0 auto;
+    position: relative;
+    width: min(100%, 1188px);
+    max-width: 1188px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.banner__slider {
+    position: relative;
+    width: 988px;
+    max-width: 100%;
+    overflow: hidden;
+    flex: 1 1 988px;
+    min-width: 0;
+}
+
+.banner__track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.banner__slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Navigation Arrows */
+.banner__nav {
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 30px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity .3s ease;
+    cursor: pointer;
+    z-index: 2;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.banner__nav--prev {
+    left: 0;
+    background-image: url("../Images/prev-icon.png");
+}
+
+.banner__nav--next {
+    right: 0;
+    background-image: url("../Images/next-icon.png");
+}
+
+.banner__slider:hover .banner__nav {
+    opacity: 1;
+}
+
+/* Pagination */
+.banner__pagination {
+    position: absolute;
+    text-align: center;
+    transform: translateZ(0);
+    transition: opacity .3s;
+    z-index: 10;
+    bottom: 14px;
+    left: 0;
+    top: auto;
+    width: 100%;
+}
+
+.banner__bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: var(--color-overlay-white-65);
+    cursor: pointer;
+    transition: transform .2s ease, background-color .2s ease;
+}
+
+.banner__bullet:hover {
+    transform: scale(1.1);
+}
+
+.banner__bullet--active {
+    background: var(--color-white);
+    transform: scale(1.15);
+}
+
+/* App Promo Sidebar */
+.app-promo {
+    background: linear-gradient(90deg, var(--color-white), var(--color-overlay-white-transparent)), linear-gradient(179.27deg, var(--color-app-grad-start) .83%, var(--color-app-grad-mid) 46.78%, var(--color-white) 99.57%), linear-gradient(0deg, var(--color-white), var(--color-white));
+    height: 344px;
+    padding: 6px;
+    width: 194px;
+    flex: 0 0 194px;
+    box-sizing: border-box;
+    font-family: "NotoSans-Medium", sans-serif;
+}
+
+.app-promo__header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.app-promo__logo {
+    height: 42px;
+    width: 42px;
+    display: inline-flex;
+    flex: 0 0 42px;
+    overflow: hidden;
+}
+
+.app-promo__logo picture {
+    display: inline-flex;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.app-promo__logo img {
+    display: inline-block;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    width: auto;
+}
+
+.app-promo__title {
+    color: var(--color-app-title-brown);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-left: -20px;
+    max-width: 138px;
+}
+
+.app-promo__content {
+    background-image: url("../Images/folder.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 158px;
+    margin-top: 6px;
+    overflow: hidden;
+    width: 100%;
+    color: var(--color-white);
+}
+
+.app-promo__rating {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.app-promo__rating img {
+    height: 11px;
+    width: 10px;
+}
+
+.app-promo__rating span {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-left: 2px;
+    max-width: 56px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.app-promo__desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+}
+
+.app-promo__desc .app-text {
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 164px;
+    text-align: center;
+}
+
+.app-promo__features {
+    margin-top: 6px;
+    padding-left: 33px;
+}
+
+.app-promo__feature {
+    display: flex;
+    align-items: center;
+}
+
+.app-promo__feature+.app-promo__feature {
+    margin-top: 6px;
+}
+
+.app-promo__feature img {
+    height: 36px;
+    width: 36px;
+}
+
+.app-promo__feature span {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-left: 9px;
+    max-width: 82px;
+}
+
+.app-promo__download-section {
+    margin-top: 6px;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.app-promo__qr {
+    background: var(--color-white);
+    height: 90px;
+    margin-right: 0;
+    overflow: hidden;
+    width: 90px;
+}
+
+.app-promo__stores {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.app-promo__stores-btn {
+    background-size: 100% auto;
+    height: 24px;
+    width: 83px;
+}
+
+.app-promo__btn-apple {
+    background-image: url('../Images/appleStore.png');
+}
+
+.app-promo__btn-google {
+    background-image: url('../Images/PlayStore.png');
+}
+
+.app-promo__note {
+    color: var(--color-app-note);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    margin-left: 4px;
+    margin-top: 6px;
+}
