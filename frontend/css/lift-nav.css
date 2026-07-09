@@ -1,0 +1,55 @@
+.c-lift-nav {
+    background-color: var(--color-seo-bg);
+    bottom: 40px;
+    left: 0;
+    position: fixed;
+    width: 40px;
+    z-index: 100;
+}
+
+.c-lift-nav__item {
+    background-color: var(--color-page-bg);
+    border: 1px solid var(--color-white);
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    margin: -1px;
+    text-align: center;
+    position: relative;
+    width: 40px;
+}
+
+.c-lift-nav__hover-text {
+    font-family: 'NotoSans';
+    color: var(--color-accent-orange);
+    background: var(--color-page-bg);
+    border: 1px solid var(--color-white);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -170px;
+    padding-left: 10px;
+    text-align: left;
+    top: -1px;
+    bottom: -1px;
+    width: 170px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease, visibility .2s ease;
+}
+
+.c-lift-nav__item:hover .c-lift-nav__hover-text {
+    opacity: 1;
+    visibility: visible;
+    border-left: none;
+}
+
+.c-lift-nav__item:hover {
+    border-right: none;
+}
+
+.c-lift-nav__icon--accent {
+    color: var(--color-brand-orange);
+}
