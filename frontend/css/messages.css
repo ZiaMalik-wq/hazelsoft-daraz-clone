@@ -1,0 +1,59 @@
+/* Messages App Widget */
+.chat-widget {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    z-index: 1000;
+    background-color: var(--color-white);
+}
+
+.chat-widget--minimized {
+    width: 160px;
+    height: 40px;
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 2px 4px;
+    color: var(--color-im-text);
+    cursor: pointer;
+}
+
+.chat-widget--minimized button {
+    width: 160px;
+}
+
+.chat-widget__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.chat-widget__content {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    min-width: 135px;
+}
+
+.chat-widget__title {
+    margin-left: 8px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-im-title);
+}
+
+.chat-widget__icon {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 767px) {
+    .chat-widget {
+        display: none !important;
+    }
+}

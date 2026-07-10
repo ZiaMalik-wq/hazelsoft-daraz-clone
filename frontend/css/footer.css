@@ -1,0 +1,336 @@
+/* Main Footer Block */
+.footer {
+    font-family: 'NotoSans';
+    color: var(--color-white);
+    background: var(--color-page-bg);
+}
+
+.footer--primary {
+    background: var(--color-seo-bg);
+}
+
+.product-page .footer--primary {
+    font-family: 'Roboto-Light', 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.product-page .footer--primary .footer__title {
+    font-family: 'Roboto-Light', 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.product-page .footer--primary .footer__link,
+.product-page .footer--primary .footer__static-text {
+    font-family: 'Roboto-Extra-Light', 'Roboto-Light', 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.footer__container {
+    max-width: 1188px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 25px;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__col--25 {
+    width: 25%;
+}
+
+.footer__col--32 {
+    width: 32%;
+    margin-right: 2%;
+}
+
+.footer__col--50 {
+    width: 50%;
+}
+
+.footer__title {
+    color: var(--color-nav-blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 0;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item {
+    font-weight: 200;
+    line-height: 17px;
+}
+
+.footer__link,
+.footer__static-text {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-nav-blue);
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+/* App Download Section */
+.footer__app-section {
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__app-branding {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.footer__app-logo {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+}
+
+.footer__app-status {
+    color: var(--color-footer-accent);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer__app-label {
+    color: var(--color-nav-blue);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer__app-buttons {
+    margin: 1px 0 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 126px);
+    gap: 10px;
+}
+
+.footer__app-buttons a {
+    display: block;
+    width: 126px;
+}
+
+.footer__app-buttons img {
+    width: 126px;
+    height: 42px;
+    display: block;
+}
+
+/* Middle Footer Segment */
+.footer--light {
+    background-color: var(--color-white);
+    padding: 0;
+}
+
+.product-page .footer.footer--light {
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer--light .footer__title {
+    color: var(--color-footer-title-dark);
+    font-weight: 400;
+    line-height: 2.2em;
+    margin-bottom: 15px;
+}
+
+/* Payment Icons */
+.footer__payment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer__payment-list img {
+    height: 28px;
+    width: auto;
+    background: var(--color-white);
+    padding: 2px 4px;
+}
+
+/* Verified Logos */
+.footer__verified-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer__verified-list img {
+    height: 41px;
+    width: auto;
+}
+
+/* SEO Section */
+.footer__seo {
+    font-family: 'NotoSans';
+    background: var(--color-seo-bg);
+    padding: 60px 0 40px;
+}
+
+.footer__seo .footer__container {
+    padding: 0;
+}
+
+.footer__seo-content {
+    width: 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.footer__seo-grid {
+    column-count: 2;
+    column-gap: 30px;
+    column-fill: balance;
+}
+
+.footer__seo-title {
+    color: var(--color-text-strong);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.footer__seo-text {
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--color-text-dim-2);
+    line-height: 14px;
+    margin: 6px 0 12px;
+    display: block;
+    padding-right: 20%;
+}
+
+.footer__seo-bold {
+    font-family: "NotoSans-Bold";
+    font-weight: 600;
+    color: var(--color-text-dim);
+}
+
+.footer__seo-categories {
+    width: 25%;
+}
+
+.footer__seo-category-wrapper {
+    padding-right: 28%;
+}
+
+.footer__seo-label {
+    color: var(--color-text-strong);
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 15px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.footer__tag-cloud {
+    margin-bottom: 8px;
+}
+
+.footer__tag-cloud a {
+    height: 15px;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--color-text-dim);
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.footer__tag-cloud a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Footer Segment */
+.footer__bottom {
+    font-family: 'NotoSans';
+    background-color: var(--color-white);
+    color: var(--color-text-strong);
+}
+
+.product-page .footer__bottom {
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-page .footer__bottom .footer__title {
+    font-family: 'Roboto-Light', 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.product-page .footer__bottom .footer__copyright {
+    font-family: 'Roboto-Extra-Light', 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.footer__bottom .footer__container {
+    padding: 40px 0;
+}
+
+.footer__bottom .footer__title {
+    color: var(--color-text-dark);
+}
+
+.footer__venture-list {
+    display: flex;
+}
+
+.footer__venture-item {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+.footer__venture-item img {
+    height: 28px;
+    width: 28px;
+}
+
+.footer__venture-item span {
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--color-text-dim-2);
+    margin: 0 15px 0 7px;
+}
+
+.footer__venture-item:hover span {
+    text-decoration: underline;
+}
+
+.footer__social-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social-link {
+    margin-right: 17px;
+    display: block;
+}
+
+.footer__social-link img {
+    height: 28px;
+    width: 28px;
+}
+
+.footer__copyright {
+    color: var(--color-text-strong);
+    align-self: flex-end;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 30px;
+}
