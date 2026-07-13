@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Daraz-Product</title>
+  <link rel="icon" type="image/png" href="Images/daraz-logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/messages.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="product-page">
+
+  <div id="header-placeholder" data-hotlinks="true"></div>
+
+  <!-- breadcrumb -->
+  <div id="J_breadcrumb_list" class="breadcrumb_list">
+    <ul class="breadcrumb" id="J_breadcrumb"></ul>
+  </div>
+
+  <div class="pdp-container">
+
+    <!-- LEFT COLUMN: Image Gallery -->
+    <section class="pdp-gallery">
+      <div class="pdp-main-image">
+        <img id="pdp-main-img" src="" alt="Product Main Image">
+        <div class="pdp-zoom-lens" id="pdp-zoom-lens" aria-hidden="true"></div>
+      </div>
+      <div class="pdp-zoom-preview" id="pdp-zoom-preview" aria-hidden="true"></div>
+      <div class="pdp-thumbnails">
+        <button class="thumb-nav thumb-prev" type="button" aria-label="Previous image">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="pdp-thumbnails-track" id="pdp-thumbs-track"></div>
+        <button class="thumb-nav thumb-next" type="button" aria-label="Next image">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- MIDDLE COLUMN: Core Product Details -->
+    <section class="pdp-info">
+      <h1 class="pdp-title" id="pdp-title"></h1>
+
+      <div class="pdp-rating-row">
+        <div class="pdp-stars" id="pdp-stars"></div>
+        <a href="#" class="pdp-rating-count" id="pdp-rating-count"></a>
+        <div class="pdp-actions">
+          <button class="btn-share" type="button" aria-label="Share">
+            <img src="Images/share-icon.svg" alt="Share" width="22" height="22">
+          </button>
+          <button class="btn-wishlist" type="button" aria-label="Add to wishlist">
+            <img src="Images/wishlist-icon.svg" alt="Wishlist" width="22" height="22">
+          </button>
+        </div>
+      </div>
+
+      <div class="pdp-brand-info" id="pdp-brand-info"></div>
+
+      <div class="pdp-price-section">
+        <span class="pdp-price-current" id="pdp-price-current"></span>
+        <div class="pdp-price-original">
+          <span class="old-price" id="pdp-old-price"></span>
+          <span class="discount-tag" id="pdp-discount-tag"></span>
+        </div>
+      </div>
+
+      <div class="pdp-variants" id="pdp-variants"></div>
+
+      <div class="pdp-purchase-row">
+        <h6 class="section-title">Quantity</h6>
+        <div class="section-content">
+          <div class="quantity-selector">
+            <button class="qty-btn decrease" type="button" aria-label="Decrease quantity">
+              <i class="fa-solid fa-minus qty-icon" aria-hidden="true"></i>
+            </button>
+            <input class="qty-value" min="1" max="10" step="1" autocomplete="off" type="text" value="1" readonly>
+            <button class="qty-btn increase" type="button" aria-label="Increase quantity">
+              <i class="fa-solid fa-plus qty-icon" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pdp-buttons">
+        <button class="btn-buy-now pdp-button">Buy Now</button>
+        <button class="btn-add-to-cart pdp-button">Add to Cart</button>
+      </div>
+    </section>
+
+    <!-- RIGHT COLUMN: Delivery & Seller -->
+    <aside class="pdp-sidebar">
+      <div class="delivery">
+        <div class="delivery-header">
+          <h6 class="title">Delivery Options &nbsp;</h6>
+          <button class="delivery-help" type="button" title="Delivery timelines and fees are estimates.">
+            <i class="fa-regular fa-circle-question"></i>
+          </button>
+        </div>
+        <div class="delivery-location">
+          <i class="location-icon fa-solid fa-location-dot"></i>
+          <div class="location-address">Sindh, Karachi - Gulshan-e-Iqbal, Block 15</div>
+          <a href="#" class="location-change">Change</a>
+        </div>
+        <div class="delivery-options">
+          <div class="delivery-option-row">
+            <i class="delivery-option-icon fa-solid fa-truck-fast"></i>
+            <div class="delivery-option-info">
+              <div class="delivery-option-title" id="pdp-delivery-method">Standard Delivery</div>
+              <div class="delivery-option-time" id="pdp-delivery-estimate"></div>
+            </div>
+            <div class="delivery-option-fee" id="pdp-delivery-fee"></div>
+          </div>
+          <div class="delivery-option-row">
+            <i class="delivery-option-icon fa-solid fa-money-bill-wave"></i>
+            <div class="delivery-option-info">
+              <div class="delivery-option-title">Cash on Delivery Available</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="delivery-header">
+          <h6 class="title">Return & Warranty &nbsp;</h6>
+          <button class="delivery-help" type="button" title="Delivery timelines and fees are estimates.">
+            <i class="fa-regular fa-circle-question"></i>
+          </button>
+        </div>
+        <div class="warranty-options">
+          <div class="warranty-option-item delivery-option-row">
+            <i class="delivery-option-icon fa-regular fa-calendar-check"></i>
+            <div class="delivery-option-info">
+              <div class="delivery-option-title">14 days easy return</div>
+            </div>
+          </div>
+          <div class="warranty-option-item delivery-option-row">
+            <i class="delivery-option-icon fa-regular fa-circle-xmark"></i>
+            <div class="delivery-option-info">
+              <div class="delivery-option-title">Warranty not available</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-app module">
+          <div class="guide-app-row">
+            <div class="guide-app-qrcode">
+              <img src="Images/qrcode.avif" alt="QR code" width="111" height="111">
+            </div>
+            <div class="guide-app-card">
+              <img src="Images/guide-logo.png" alt="Daraz App" width="43" height="43">
+              <p>Download app to enjoy exclusive discounts!</p>
+            </div>
+          </div>
+          <p class="guide-app-scan"><i class="fa-solid fa-mobile-screen-button"></i> Scan with mobile</p>
+        </div>
+
+        <div class="seller-card" id="pdp-seller-card"></div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="pdp-details-container">
+    <section class="pdp-section pdp-description">
+      <h2 class="pdp-mod-section-title outer-title">Product details of</h2>
+      <div class="pdp-highlights">
+        <ul class="highlights-list" id="pdp-highlights-list"></ul>
+      </div>
+      <div class="pdp-detailed-content" id="pdp-detailed-content">
+        <div class="html-content detail-content">
+          <article class="lzd-article">
+            <ul id="pdp-detail-list"></ul>
+            <div id="pdp-detail-images"></div>
+            <div class="pdp-mod-specification" id="pdp-specifications"></div>
+          </article>
+        </div>
+        <div class="pdp-detail-fade"></div>
+      </div>
+      <button class="view-more-btn" id="view-more-btn" type="button">VIEW MORE</button>
+    </section>
+  </div>
+
+  <div class="pdp-review-container" id="pdp-review-container">
+    <section class="pdp-review">
+      <h2 class="pdp-mod-section-title outer-title" id="pdp-review-title">Ratings & Reviews</h2>
+      <div class="mod-rating">
+        <div class="content">
+          <div class="left">
+            <div class="summary">
+              <div class="score">
+                <span class="score-average" id="review-score-average">0.0</span>
+                <span class="score-max">/5</span>
+              </div>
+              <div class="average container-star" id="review-stars-average"></div>
+              <div class="count" id="review-count">0 Ratings</div>
+            </div>
+            <div class="detail">
+              <ul id="review-distribution-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review-controls">
+        <span class="controls-title">Product Reviews</span>
+        <div class="controls-right">
+          <div class="control-item">
+            <i class="fa-solid fa-arrow-down-wide-short control-icon"></i>
+            <span>Sort:</span><span class="control-value">Relevance</span>
+          </div>
+          <div class="control-item">
+            <i class="fa-solid fa-filter control-icon"></i>
+            <span>Filter:</span><span class="control-value">All star</span>
+          </div>
+        </div>
+      </div>
+      <div class="mod-reviews list" id="product-reviews-list"></div>
+    </section>
+  </div>
+
+  <div class="qna-container pdp-mod-qna" id="qna-container">
+    <h2 class="pdp-mod-section-title outer-title" id="qna-title">Questions about this product</h2>
+    <div id="qna-content-area"></div>
+  </div>
+
+  <div class="recommend-container" id="recommend-container">
+    <h6 class="recommend-title">You may also like</h6>
+    <div class="jfy-grid" id="recommend-list"></div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- Chat Widget -->
+  <div tabindex="0" class="chat-widget chat-widget--minimized">
+    <button class="chat-widget__btn">
+      <div class="chat-widget__content">
+        <img src="Images/messages-icon.svg" class="chat-widget__icon" alt="Messages" />
+        <div class="chat-widget__title">Messages</div>
+      </div>
+    </button>
+  </div>
+
+  <!-- External Libraries -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Entry Points (Modules) -->
+  <script type="module" src="js/core/layout.js"></script>
+  <script type="module" src="js/core/login-modal.js"></script>
+  <script type="module" src="js/core/signup-modal.js"></script>
+  <script type="module" src="js/product.js"></script>
+</body>
+
+</html>
