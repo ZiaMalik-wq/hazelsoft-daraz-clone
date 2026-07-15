@@ -1,0 +1,407 @@
+:root {
+    --iweb-bg_white: #fff;
+    --iweb-text_white: #fff;
+    --iweb-old_brand_yellow_bg: #f57224;
+    --iweb-input-border-color: #cbced5;
+    --iweb-input-border-radius: 6px;
+    --iweb-colour_fill_brand: #f06;
+    --iweb-input-text-color: #2e3346;
+    --iweb-input-focus-border-color-style: #1e71ff;
+    --iweb-font-family: "NotoSans", sans-serif;
+    --iweb-input-text-font-size: 14px;
+    --iweb-default-font-weight: 400;
+    --radius: 6px;
+    --daraz-orange: #f85606;
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+/* --- Signup Specific Adjustments --- */
+.phone-prefix-signup {
+    width: 80px;
+}
+
+.terms-checkbox-wrapper {
+    color: #858b9c;
+}
+
+.terms-checkbox {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border: 1px solid #858b9c;
+}
+
+.terms-label {
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.terms-link {
+    color: #1e71ff;
+}
+
+.signup-whatsapp-btn {
+    background-color: #f85606;
+    color: white;
+}
+
+.signup-whatsapp-icon {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.signup-hint-text {
+    color: #858b9c;
+}
+
+.login-btn-link {
+    color: #1e71ff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.social-btn-clickable {
+    cursor: pointer;
+}
+
+.social-img {
+    width: 20px;
+}
+
+.social-text {
+    color: #858b9c;
+}
+
+.login-signup-wrapper {
+    font-family: 'NotoSans', sans-serif;
+    background-color: var(--iweb-bg_white);
+    font-size: 14px;
+    max-height: calc(100vh - 120px);
+    max-width: 444px;
+    min-height: 445px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#daraz-login-modal .modal-dialog,
+#daraz-signup-modal .modal-dialog {
+    width: 444px;
+    max-width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#daraz-login-modal .modal-content,
+#daraz-signup-modal .modal-content {
+    width: 100%;
+    min-height: 445px;
+    border-radius: 6px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.22);
+}
+
+#daraz-login-modal .login-signup-wrapper,
+#daraz-signup-modal .login-signup-wrapper {
+    width: 100%;
+    max-width: none;
+    min-height: 445px;
+    max-height: none;
+    animation: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#panelPhone {
+    display: none;
+}
+
+/* --- Login Wrapper (inner panel) --- */
+.login-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    min-height: 445px;
+    position: relative;
+}
+
+/* --- Tabs --- */
+.signup-title {
+    font-family: 'NotoSans-Medium';
+    color: #2e3346;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 26px;
+    text-align: center;
+    width: 100%;
+}
+
+.login-tabs {
+    margin-top: 26px;
+    padding: 0 36px;
+}
+
+.login-tab {
+    font-family: 'NotoSans-Medium';
+    color: #858b9c;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1
+}
+
+.login-tab.active {
+    color: #2e3346;
+}
+
+.tab-divider {
+    background-color: #e3e7f1;
+    height: 18px;
+    width: 1px;
+    flex-shrink: 0;
+}
+
+/* --- Form Area --- */
+.login-form-wrapper {
+    margin-top: 36px !important;
+    padding: 0 36px;
+}
+
+.input-container--password {
+    margin: 18px 0 0 !important;
+}
+
+.auth-input {
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--iweb-input-border-color);
+    border-radius: var(--iweb-input-border-radius);
+    caret-color: var(--iweb-colour_fill_brand);
+    color: var(--iweb-input-text-color);
+    display: block;
+    font-size: var(--iweb-input-text-font-size);
+    font-weight: var(--iweb-default-font-weight);
+    height: 48px;
+    line-height: 18px;
+    margin: 0;
+    outline: 0;
+    padding: 0 18px;
+    resize: none;
+    width: 100%;
+    box-shadow: none !important;
+}
+
+.auth-input::placeholder {
+    color: #858b9c;
+    opacity: 1;
+}
+
+.auth-input:focus {
+    border-color: var(--iweb-input-focus-border-color-style);
+}
+
+.auth-input.error {
+    border-color: #f44336 !important;
+}
+
+/* --- Toggle password icon --- */
+.toggle-password-icon {
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    color: rgb(133, 139, 156);
+    cursor: pointer;
+}
+
+.toggle-password-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Forgot Password --- */
+.forgot-password {
+    color: #858b9c;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+/* --- Error Message --- */
+.err-msg {
+    color: #f44336;
+    font-size: 12px;
+    display: none;
+    margin-top: 0;
+}
+
+.err-msg.show {
+    display: block;
+    margin-top: 4px;
+}
+
+/* --- Buttons --- */
+.auth-button {
+    margin-top: 24px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-family: 'NotoSans-Medium';
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: var(--radius);
+}
+
+.auth-button--primary {
+    background: var(--iweb-old_brand_yellow_bg);
+    color: var(--iweb-text_white);
+}
+
+.auth-button--whatsapp {
+    background-color: var(--iweb-old_brand_yellow_bg);
+    color: #fff;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 49px;
+    justify-content: flex-start !important;
+    padding: 0 18px;
+}
+
+.auth-button--whatsapp .whatsapp-icon {
+    margin-left: 0;
+    flex: 0 0 auto;
+}
+
+.auth-button--whatsapp .whatsapp-text {
+    flex: 1;
+    text-align: center;
+}
+
+.button-mask {
+    background: var(--iweb-bg_white);
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+
+.auth-button:hover .button-mask {
+    opacity: 0.1;
+}
+
+/* --- Sign up hint --- */
+.signup-hint {
+    color: #858b9c;
+    margin-top: 12px;
+}
+
+.signup-button {
+    color: #1e71ff;
+    cursor: pointer;
+}
+
+/* --- Social Login --- */
+.other-login-options {
+    text-align: center;
+}
+
+.other-login-hint {
+    color: #858b9c;
+    font-size: 14px;
+}
+
+.social-login-wrapper {
+    margin: 18px 0 24px;
+}
+
+.social-button {
+    color: #858b9c;
+    cursor: pointer;
+    height: 24px;
+    font-size: 14px;
+}
+
+.social-button--google {
+    margin-right: 30px;
+}
+
+.social-button--facebook {
+    margin-right: 0;
+}
+
+.social-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 6px;
+}
+
+/* --- Close Button --- */
+.close-login-btn {
+    top: 18px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    color: rgb(133, 139, 156);
+    fill: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.close-login-btn img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Phone Panel --- */
+#panelPhone .login-form-wrapper {
+    margin-top: 72px !important;
+    padding: 0 24px;
+}
+
+.phone-input-wrapper .input-container {
+    margin-bottom: 0;
+}
+
+.phone-input-wrapper .auth-input {
+    height: 48px;
+    padding: 0 18px;
+}
+
+.phone-input-wrapper .phone-prefix .auth-input {
+    padding: 0;
+    text-align: center;
+}
+
+.phone-input-wrapper .phone-prefix {
+    flex: 0 0 82px;
+}
+
+/* --- WhatsApp button icon --- */
+.whatsapp-icon {
+    width: 22px;
+    height: 22px;
+}
