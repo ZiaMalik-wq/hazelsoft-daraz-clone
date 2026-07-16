@@ -1,0 +1,18 @@
+[
+  { "name": "3D Printers", "image": "Images/ctg1.avif" },
+  { "name": "Pasta, Noodle & Pizza Tools", "image": "Images/ctg2.avif" },
+  { "name": "Sim Tools", "image": "Images/ctg3.avif" },
+  { "name": "Protective Lens", "image": "Images/ctg4.avif" },
+  { "name": "Screen Protectors", "image": "Images/ctg5.avif" },
+  { "name": "Casserole Pots", "image": "Images/ctg6.jpg" },
+  { "name": "Hoodies & Sweatshirts", "image": "Images/ctg7.avif" },
+  { "name": "Toy Boxes & Organisers", "image": "Images/ctg8.avif" },
+  { "name": "Dog & Cat Electric Clippers", "image": "Images/ctg9.avif" },
+  { "name": "Dining Sets", "image": "Images/ctg10.avif" },
+  { "name": "MicroPhones", "image": "Images/ctg11.avif" },
+  { "name": "Leashes & Harnesses", "image": "Images/ctg12.avif" },
+  { "name": "Paints", "image": "Images/ctg13.avif" },
+  { "name": "Donate to Educate", "image": "Images/ctg14.avif" },
+  { "name": "Headbands", "image": "Images/ctg15.avif" },
+  { "name": "Face Mask & Packs", "image": "Images/ctg16.avif" }
+]

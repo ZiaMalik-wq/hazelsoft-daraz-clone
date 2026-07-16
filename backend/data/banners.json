@@ -1,0 +1,17 @@
+[
+  { "img": "Images/sliderImg1.avif", "alt": "Banner 1", "link": "#" },
+  { "img": "Images/eidsale1.avif", "alt": "Banner 2", "link": "#" },
+  { "img": "Images/bannner-3.avif", "alt": "Banner 3", "link": "#" },
+  { "img": "Images/banner4.avif", "alt": "Banner 4", "link": "#" },
+  { "img": "Images/banner5.avif", "alt": "Banner 5", "link": "#" },
+  { "img": "Images/banner6.avif", "alt": "Banner 6", "link": "#" },
+  { "img": "Images/banner7.avif", "alt": "Banner 7", "link": "#" },
+  { "img": "Images/banner8.avif", "alt": "Banner 8", "link": "#" },
+  { "img": "Images/banner9.avif", "alt": "Banner 9", "link": "#" },
+  { "img": "Images/banner10.avif", "alt": "Banner 10", "link": "#" },
+  { "img": "Images/banner11.avif", "alt": "Banner 11", "link": "#" },
+  { "img": "Images/banner12.avif", "alt": "Banner 12", "link": "#" },
+  { "img": "Images/banner13.avif", "alt": "Banner 13", "link": "#" },
+  { "img": "Images/banner14.avif", "alt": "Banner 14", "link": "#" },
+  { "img": "Images/banner15.avif", "alt": "Banner 15", "link": "#" }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "method": "Scheduled Delivery",
+    "estimate": "28 Mar-30 Mar",
+    "fee": 201
+  },
+  {
+    "id": 2,
+    "method": "Economy Delivery",
+    "estimate": "31 Mar-02 Apr",
+    "fee": 126
+  },
+  {
+    "id": 3,
+    "method": "Express Delivery",
+    "estimate": "29 Mar-01 Apr",
+    "fee": 198
+  },
+  {
+    "id": 4,
+    "method": "Scheduled Delivery",
+    "estimate": "31 Mar-03 Apr",
+    "fee": 180
+  },
+  {
+    "id": 5,
+    "method": "Priority Delivery",
+    "estimate": "29 Mar-30 Mar",
+    "fee": 179
+  },
+  {
+    "id": 6,
+    "method": "Same Day Delivery",
+    "estimate": "31 Mar-03 Apr",
+    "fee": 220
+  },
+  {
+    "id": 7,
+    "method": "Express Delivery",
+    "estimate": "31 Mar-02 Apr",
+    "fee": 245
+  },
+  {
+    "id": 8,
+    "method": "Standard Delivery",
+    "estimate": "29 Mar-01 Apr",
+    "fee": 205
+  },
+  {
+    "id": 9,
+    "method": "Express Delivery",
+    "estimate": "29 Mar-01 Apr",
+    "fee": 92
+  },
+  {
+    "id": 10,
+    "method": "Priority Delivery",
+    "estimate": "31 Mar-01 Apr",
+    "fee": 219
+  },
+  {
+    "id": 11,
+    "method": "Priority Delivery",
+    "estimate": "31 Mar-02 Apr",
+    "fee": 223
+  },
+  {
+    "id": 12,
+    "method": "Standard Delivery",
+    "estimate": "31 Mar-03 Apr",
+    "fee": 129
+  },
+  {
+    "id": 13,
+    "method": "Economy Delivery",
+    "estimate": "30 Mar-31 Mar",
+    "fee": 226
+  },
+  {
+    "id": 14,
+    "method": "Priority Delivery",
+    "estimate": "28 Mar-29 Mar",
+    "fee": 154
+  },
+  {
+    "id": 15,
+    "method": "Express Delivery",
+    "estimate": "28 Mar-30 Mar",
+    "fee": 145
+  }
+]

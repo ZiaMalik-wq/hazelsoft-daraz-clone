@@ -1,0 +1,165 @@
+{
+  "nav-categories": [
+    {
+      "name": "Electronic Accessories",
+      "subCategories": [
+        {
+          "name": "Mobile Accessories",
+          "subCategories": [
+            { "name": "Tablet Accessories", "link": "#" },
+            { "name": "Cables & Converters", "link": "#" },
+            { "name": "Phone Cases", "link": "#" },
+            { "name": "Car Mounts", "link": "#" },
+            { "name": "Parts & Tools", "link": "#" },
+            { "name": "Screen Protectors", "link": "#" },
+            { "name": "Power Banks", "link": "#" },
+            { "name": "Phone Camera Flash Lights", "link": "#" },
+            { "name": "Selfie Sticks", "link": "#" },
+            { "name": "Car Chargers", "link": "#" },
+            { "name": "Wall Chargers", "link": "#" },
+            { "name": "Docks & Stands", "link": "#" }
+          ]
+        },
+        {
+          "name": "Camera Accessories",
+          "subCategories": []
+        },
+        {
+          "name": "Wearable",
+          "subCategories": []
+        },
+        {
+          "name": "Network Components",
+          "subCategories": []
+        },
+        {
+          "name": "Computer Components",
+          "subCategories": []
+        },
+        {
+          "name": "Headphones & Headsets",
+          "subCategories": []
+        },
+        {
+          "name": "Printers",
+          "subCategories": []
+        },
+        {
+          "name": "Storage",
+          "subCategories": []
+        },
+        {
+          "name": "Portable Speakers",
+          "subCategories": []
+        },
+        {
+          "name": "Gaming Acessories",
+          "subCategories": []
+        },
+        {
+          "name": "Monitors & Accessories",
+          "subCategories": []
+        },
+        {
+          "name": "Computer Accessories",
+          "subCategories": []
+        }
+      ]
+    },
+    {
+      "name": "TV & Home Appliances",
+      "subCategories": [
+        {
+          "name": "Air Conditioner",
+          "subCategories": []
+        },
+        {
+          "name": "Washing Machine",
+          "subCategories": []
+        },
+        {
+          "name": "Refrigerators & Freezers",
+          "subCategories": []
+        },
+        {
+          "name": "Cooling & Heating",
+          "subCategories": []
+        },
+        {
+          "name": "Irons & Garment Care",
+          "subCategories": []
+        },
+        {
+          "name": "Vacuums & Floor Care",
+          "subCategories": []
+        },
+        {
+          "name": "Kitchen Appliances",
+          "subCategories": []
+        },
+        {
+          "name": "Home Audio & Theater",
+          "subCategories": []
+        },
+        {
+          "name": "Televisions",
+          "subCategories": []
+        },
+        {
+          "name": "Projectors & Players",
+          "subCategories": []
+        },
+        {
+          "name": "Generator, UPS & Solar",
+          "subCategories": []
+        },
+        {
+          "name": "TV Accessories",
+          "subCategories": []
+        }
+      ]
+    },
+    {
+      "name": "Health & beauty",
+      "subCategories": []
+    },
+    {
+      "name": "Mother & Baby",
+      "subCategories": []
+    },
+    {
+      "name": "Electronic Devices",
+      "subCategories": []
+    },
+    {
+      "name": "Groceries & Pets",
+      "subCategories": []
+    },
+    {
+      "name": "Home & Lifestyle",
+      "subCategories": []
+    },
+    {
+      "name": "Women's Fashion",
+      "subCategories": []
+    },
+    {
+      "name": "Men's Fashion",
+      "subCategories": []
+    },
+    {
+      "name": "Watches, Bags & Jewellery",
+      "subCategories": []
+    },
+    {
+      "name": "Sports & Outdoor",
+      "subCategories": []
+    },
+    {
+      "name": "Automotive & Motorbike",
+      "subCategories": []
+    }
+  ]
+}
+
+

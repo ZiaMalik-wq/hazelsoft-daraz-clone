@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Accessories Hub",
+    "positiveRating": "89",
+    "shipOnTime": "96",
+    "chatResponseRate": null
+  },
+  {
+    "id": 2,
+    "name": "Fashion Time PK",
+    "positiveRating": "87",
+    "shipOnTime": "91",
+    "chatResponseRate": null
+  },
+  {
+    "id": 3,
+    "name": "Fitness Zone PK",
+    "positiveRating": "95",
+    "shipOnTime": "99",
+    "chatResponseRate": 92
+  },
+  {
+    "id": 4,
+    "name": "Gift Corner",
+    "positiveRating": "91",
+    "shipOnTime": "100",
+    "chatResponseRate": 100
+  },
+  {
+    "id": 5,
+    "name": "Health & Beauty Store",
+    "positiveRating": "88",
+    "shipOnTime": "96",
+    "chatResponseRate": null
+  },
+  {
+    "id": 6,
+    "name": "Healthy Snacks PK",
+    "positiveRating": "93",
+    "shipOnTime": "100",
+    "chatResponseRate": 85
+  },
+  {
+    "id": 7,
+    "name": "Jenpharm Official",
+    "positiveRating": "97",
+    "shipOnTime": "100",
+    "chatResponseRate": 90
+  },
+  {
+    "id": 8,
+    "name": "Jewellery Hub",
+    "positiveRating": "90",
+    "shipOnTime": "95",
+    "chatResponseRate": 88
+  },
+  {
+    "id": 9,
+    "name": "Laptop Accessories PK",
+    "positiveRating": "92",
+    "shipOnTime": "97",
+    "chatResponseRate": null
+  },
+  {
+    "id": 10,
+    "name": "Mobile World PK",
+    "positiveRating": "94",
+    "shipOnTime": "98",
+    "chatResponseRate": 95
+  },
+  {
+    "id": 11,
+    "name": "Nestle Official Store",
+    "positiveRating": "99",
+    "shipOnTime": "100",
+    "chatResponseRate": 98
+  },
+  {
+    "id": 12,
+    "name": "Pet Shopper (Lahore)",
+    "positiveRating": "94",
+    "shipOnTime": "100",
+    "chatResponseRate": null
+  },
+  {
+    "id": 13,
+    "name": "Photography Essentials",
+    "positiveRating": "91",
+    "shipOnTime": "97",
+    "chatResponseRate": 80
+  },
+  {
+    "id": 14,
+    "name": "SP Dealz",
+    "positiveRating": "91",
+    "shipOnTime": "97",
+    "chatResponseRate": 80
+  },
+  {
+    "id": 15,
+    "name": "Tech Gadgets PK",
+    "positiveRating": "85",
+    "shipOnTime": "92",
+    "chatResponseRate": null
+  }
+]

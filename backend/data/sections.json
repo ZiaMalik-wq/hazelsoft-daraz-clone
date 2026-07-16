@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "type": "flash-sale",
+    "sectionTitle": "Flash Sale"
+  },
+  {
+    "id": "3",
+    "type": "categories",
+    "sectionTitle": "Categories"
+  },
+  {
+    "id": 2,
+    "type": "jfy",
+    "sectionTitle": "Just for You"
+  }
+]
