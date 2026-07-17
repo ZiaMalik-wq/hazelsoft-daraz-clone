@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Core */
+    --color-white: #fff;
+    --color-black: #000;
+
+    /* Brand */
+    --color-brand-orange: #f85606;
+    --color-accent-orange: #f57224;
+    --color-accent-orange-dark: #f36d00;
+    --color-brand-cyan: #2abbe8;
+    --color-brand-cyan-dark: #16849b;
+    --color-footer-accent: #f36f21;
+    --color-nav-blue: #0f136d;
+
+    /* Links */
+    --color-link-cyan: #1a9cb8;
+    --color-link-cyan-2: #1a9cb7;
+    --color-link-blue: #136cff;
+    --color-link-blue-hover: #1e71ff;
+    --color-link-blue-strong: #1456c5;
+
+    /* Background Surfaces */
+    --color-page-bg: #f5f5f5;
+    --color-bg-light: #fafafa;
+    --color-surface-muted: #f8f8f8;
+    --color-seo-bg: #f4f4f6;
+    --color-search-button-bg: #ffe1d2;
+
+    /* App UI */
+    --color-app-title-brown: #6c1d00;
+    --color-app-note: #2e3346;
+    --color-app-grad-start: #ffedd6;
+    --color-app-grad-mid: #ffc3e3;
+
+    /* Text */
+    --color-text-primary: #212121;
+    --color-text-primary-2: #202020;
+    --color-text-heading: #1f1f1f;
+    --color-text-strongest: #333;
+    --color-text-dark: #2a2a2a;
+    --color-text-strong: #606060;
+    --color-text-medium: #424242;
+    --color-text-body: #4c4c4c;
+    --color-text-subtle: #616161;
+    --color-text-secondary: #757575;
+    --color-text-muted: #999;
+    --color-text-dim: #888;
+    --color-text-dim-2: #888888;
+    --color-text-disabled: #bababa;
+    --color-placeholder: #9e9e9e;
+
+    /* Borders */
+    --color-border-light: #eff0f5;
+    --color-border-soft: #e9e9e9;
+    --color-border-card: #e2e2e2;
+    --color-border-mid: #d5d5d5;
+    --color-border-dim-3: #d7d7d7;
+    --color-border-dim-2: #d8d8d8;
+    --color-border-dim: #dadada;
+    --color-border-muted: #ccc;
+    --color-border-subtle: #eee;
+    --color-border-extra-light: #f2f2f2;
+    --color-border-section: #ececec;
+    --color-border-comment: #e3e7f1;
+
+    /* States */
+    --color-hover-bg: #eceff1;
+    --color-alert-red: #ff330c;
+    --color-success-green: #4caf50;
+    --color-rating-star: #faca51;
+    --color-star-empty: #ddd;
+    --color-scroll-thumb: #8f8f8f;
+
+    /* Overlay / Shadow */
+    --color-shadow-strong: rgba(0, 0, 0, 0.25);
+    --color-overlay-black-45: rgba(0, 0, 0, 0.45);
+    --color-overlay-black-18: rgba(0, 0, 0, 0.18);
+    --color-overlay-white-100: rgba(255, 255, 255, 1);
+    --color-overlay-white-65: rgba(255, 255, 255, 0.65);
+    --color-overlay-white-0: rgba(255, 255, 255, 0);
+    --color-overlay-white-transparent: hsla(0, 0%, 100%, 0);
+
+    /* Footer */
+    --color-footer-title-dark: #183544;
+
+    /* Instant Messaging App */
+    --color-im-text: #003e52;
+    --color-im-title: #044254;
+
+    /* Login / Additional Colors */
+    --color-input-border: #cbced5;
+    --color-brand-pink: #f06;
+    --color-login-bg: #f4f4f7;
+    --color-overlay-black-10: rgba(0, 0, 0, 0.1);
+    --color-text-secondary-light: #858b9c;
+    --color-error-red: #f44336;
+    --color-error-red-dark: #c62828;
+    --color-toast-bg: #222;
+    --color-success-green-dark: #2e7d32;
+}
+
+html {
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    background: var(--color-page-bg);
+    color: var(--color-text-muted);
+}
+
+.lazada-icon {
+    font-family: "lazada-hp-icons";
+    font-style: normal;
+    font-size: 20px;
+    color: var(--color-text-muted);
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.u-image-wrapper img {
+    display: inline-block;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Promo Banner */
+.c-promo-banner {
+    display: block;
+    height: 140px;
+    width: 1188px;
+    max-width: 100%;
+    margin: 24px auto 0;
+}
+
+.c-promo-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

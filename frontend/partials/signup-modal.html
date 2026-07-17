@@ -1,0 +1,68 @@
+<!-- Signup Modal -->
+<div class="modal fade" id="daraz-signup-modal" tabindex="-1" aria-labelledby="daraz-signup-modal-label" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 p-0 overflow-hidden">
+
+      <div class="login-signup-wrapper position-relative" id="signupCard">
+
+        <!-- Close Button -->
+        <div class="close-login-btn position-absolute" id="closeSignupBtn">
+          <img src="Images/icon-close.svg" alt="Close signup" />
+        </div>
+
+        <div class="login-wrapper" id="panelSignup">
+          <div class="signup-title">Sign up</div>
+          <div class="login-form-wrapper w-100 mt-4">
+            <div class="phone-input-wrapper d-flex flex-row align-items-center gap-2 mb-3 w-100">
+              <div class="input-wrapper phone-prefix-signup">
+                <div class="input-container position-relative mb-0">
+                  <input type="text" readonly value="PK+92" class="auth-input text-center px-1" />
+                </div>
+              </div>
+              <div class="input-wrapper flex-grow-1">
+                <div class="input-container position-relative mb-0">
+                  <input type="tel" id="signupPhoneNumber" placeholder="Please enter your phone number" class="auth-input w-100" minlength="10" maxlength="10" />
+                </div>
+              </div>
+            </div>
+
+            <div class="terms-checkbox-wrapper d-flex align-items-start mb-3">
+              <input type="checkbox" id="agreeTerms" class="terms-checkbox me-2 mt-1" />
+              <label for="agreeTerms" class="terms-label">
+                By creating and/or using your account, you agree to our
+                <a href="#" class="text-decoration-none terms-link">Terms of Use</a> and
+                <a href="#" class="text-decoration-none terms-link">Privacy Policy</a>.
+              </label>
+            </div>
+
+            <div class="err-msg" id="signupPhoneErr"></div>
+
+            <button type="button" id="signupWhatsappBtn" class="auth-button auth-button--whatsapp signup-whatsapp-btn w-100 d-flex align-items-center justify-content-center position-relative overflow-hidden mt-0 mb-3">
+              <img class="whatsapp-icon signup-whatsapp-icon" src="Images/whatsapp.png" alt="WhatsApp" />
+              <div class="whatsapp-text">Send code via Whatsapp</div>
+            </button>
+
+            <div class="signup-hint signup-hint-text text-center mb-4">
+              Already have an account? <span class="login-button login-btn-link">Log in Now</span>
+            </div>
+          </div>
+
+          <div class="other-login-options position-absolute bottom-0 start-0 end-0 text-center">
+            <div class="other-login-hint mb-2">Or, sign up with</div>
+            <div class="social-login-wrapper d-flex flex-row justify-content-center align-items-center w-100 mb-3">
+              <div class="social-button social-button--google social-btn-clickable d-flex flex-row align-items-center me-3">
+                <div class="social-icon me-1"><img src="Images/icon-google.svg" alt="Google" class="social-img" /></div>
+                <span class="social-text">Google</span>
+              </div>
+              <div class="social-button social-button--facebook social-btn-clickable d-flex flex-row align-items-center">
+                <div class="social-icon me-1"><img src="Images/icon-facebook.svg" alt="Facebook" class="social-img" /></div>
+                <span class="social-text">Facebook</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

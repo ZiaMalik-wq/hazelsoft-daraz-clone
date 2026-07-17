@@ -1,0 +1,107 @@
+<!-- Login Modal — loaded by login-modal.js via $.get() -->
+<div class="modal fade" id="daraz-login-modal" tabindex="-1" aria-labelledby="daraz-login-modal-label" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 p-0 overflow-hidden">
+
+      <div class="login-signup-wrapper position-relative" id="loginCard">
+
+        <!-- Close Button -->
+        <div class="close-login-btn position-absolute" id="closeLoginBtn">
+          <img src="Images/icon-close.svg" alt="Close login" />
+        </div>
+
+        <!-- Password Login Panel -->
+        <div class="login-wrapper" id="panelPassword">
+          <div class="login-tabs d-flex flex-row align-items-center w-100">
+            <div class="login-tab  text-center active" data-tab="password">Password</div>
+            <div class="tab-divider"></div>
+            <div class="login-tab text-center" data-tab="phone">Phone Number</div>
+          </div>
+          <div class="login-form-wrapper w-100">
+            <div class="mb-0">
+              <div class="input-container position-relative">
+                <input type="text" id="pwIdentifier" placeholder="Please enter your Phone or Email" class="auth-input w-100" autocomplete="username" maxlength="100" />
+              </div>
+            </div>
+            <div class="mb-0">
+              <div class="input-container input-container--password position-relative">
+                <input type="password" id="pwPassword" placeholder="Please enter your password" class="auth-input w-100" autocomplete="current-password" minlength="6" maxlength="64" />
+                <div class="toggle-password-icon position-absolute" id="togglePwBtn">
+                  <img src="Images/eye-hidden.svg" alt="Toggle password visibility" />
+                </div>
+              </div>
+            </div>
+            <div class="forgot-password text-end">Forgot password?</div>
+            <div class="err-msg" id="pwErr"></div>
+            <button type="button" id="passwordLoginBtn" class="auth-button auth-button--primary w-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+              <div class="button-mask position-absolute top-0 start-0 w-100 h-100"></div>
+              LOGIN
+            </button>
+            <div class="signup-hint text-center">
+              Don't have an account? <span class="signup-button">Sign up</span>
+            </div>
+          </div>
+          <div class="other-login-options position-absolute bottom-0 start-0 end-0 text-center">
+            <div class="other-login-hint">Or, login with</div>
+            <div class="social-login-wrapper d-flex flex-row justify-content-center align-items-center w-100">
+              <div class="social-button social-button--google d-flex flex-row align-items-center">
+                <div class="social-icon"><img src="Images/icon-google.svg" alt="Google" /></div>
+                <span>Google</span>
+              </div>
+              <div class="social-button social-button--facebook d-flex flex-row align-items-center">
+                <div class="social-icon"><img src="Images/icon-facebook.svg" alt="Facebook" /></div>
+                <span>Facebook</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone Number Login Panel -->
+        <div class="login-wrapper" id="panelPhone">
+          <div class="login-tabs d-flex flex-row align-items-center w-100">
+            <div class="login-tab text-center" data-tab="password">Password</div>
+            <div class="tab-divider"></div>
+            <div class="login-tab text-center active" data-tab="phone">Phone Number</div>
+          </div>
+          <div class="login-form-wrapper w-100">
+            <div class="phone-input-wrapper d-flex flex-row align-items-center gap-2 mb-0 w-100">
+              <div class="input-wrapper phone-prefix">
+                <div class="input-container position-relative mb-0">
+                  <input type="text" readonly value="🇵🇰+92" class="auth-input text-center" />
+                </div>
+              </div>
+              <div class="input-wrapper flex-grow-1">
+                <div class="input-container position-relative mb-0">
+                  <input type="tel" id="phoneNumber" placeholder="Please enter your phone number" class="auth-input w-100" minlength="10" maxlength="10" />
+                </div>
+              </div>
+            </div>
+            <div class="err-msg" id="phoneErr"></div>
+            <button type="button" id="whatsappLoginBtn" class="auth-button auth-button--whatsapp w-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+              <div class="button-mask position-absolute top-0 start-0 w-100 h-100"></div>
+              <img class="whatsapp-icon" src="Images/whatsapp.png" alt="WhatsApp" />
+              <div class="whatsapp-text flex-grow-1">Send code via Whatsapp</div>
+            </button>
+            <div class="signup-hint text-center">
+              Don't have an account? <span class="signup-button">Sign up</span>
+            </div>
+          </div>
+          <div class="other-login-options position-absolute bottom-0 start-0 end-0 text-center">
+            <div class="other-login-hint mb-2">Or, login with</div>
+            <div class="social-login-wrapper d-flex flex-row justify-content-center align-items-center w-100">
+              <div class="social-button social-button--google d-flex flex-row align-items-center">
+                <div class="social-icon me-1"><img src="Images/icon-google.svg" alt="Google" /></div>
+                <span>Google</span>
+              </div>
+              <div class="social-button social-button--facebook d-flex flex-row align-items-center">
+                <div class="social-icon me-1"><img src="Images/icon-facebook.svg" alt="Facebook" /></div>
+                <span>Facebook</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
