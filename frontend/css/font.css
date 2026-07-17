@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "NotoSans";
+    font-weight: 400;
+    src: url("../fonts/EuclidCircularA-Regular.woff2") format('woff2');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "NotoSans-Medium";
+    font-weight: 400;
+    src: url("../fonts/NotoSans-Medium.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "NotoSans-Bold";
+    font-weight: 400;
+    src: url("../fonts/EuclidCircularA-Bold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Roboto-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/roboto-medium.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Roboto-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto-Extra-Light";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/Roboto-ExtraLight.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "lazada-hp-icons";
+    src: url("../fonts/iconfont-hp.eot");
+    src: url("../fonts/iconfont-hp\ \(1\).eot") format("embedded-opentype"),
+        url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.woff") format("woff"),
+        url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.ttf") format("truetype");
+}

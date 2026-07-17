@@ -1,0 +1,113 @@
+<div class="topbar">
+  <div class="topbar__container">
+    <div class="topbar__item">
+      <a href="#" class="topbar__link">Save More on App</a>
+    </div>
+    <div class="topbar__item">
+      <a href="#" class="topbar__link">Sell on Daraz</a>
+    </div>
+    <div class="topbar__item">
+      <a href="#" class="topbar__link">Help &amp; Support</a>
+    </div>
+
+    <div class="topbar__item topbar__item--account">
+      <a href="#" class="topbar__link js-login-link" aria-haspopup="true" aria-expanded="false">Login</a>
+
+      <ul class="dropdown-menu dropdown-menu-end account-dropdown__menu" aria-labelledby="accountDropdownToggle">
+        <li>
+          <a href="#" class="dropdown-item account-dropdown__link" id="account-popup-manage-account">
+            <span class="account-dropdown__icon account-dropdown__icon--manage-account"></span>
+            Manage My Account
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-item account-dropdown__link">
+            <span class="account-dropdown__icon account-dropdown__icon--my-orders"></span>
+            My Orders
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-item account-dropdown__link">
+            <span class="account-dropdown__icon account-dropdown__icon--wishlist"></span>
+            My Wishlist &amp; Followed Stores
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-item account-dropdown__link">
+            <span class="account-dropdown__icon account-dropdown__icon--my-reviews"></span>
+            My Reviews
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-item account-dropdown__link">
+            <span class="account-dropdown__icon account-dropdown__icon--returns"></span>
+            My Returns &amp; Cancellations
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-item account-dropdown__link account-dropdown__link--logout js-account-logout" id="account-popup-logout">
+            <span class="account-dropdown__icon account-dropdown__icon--logout"></span>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="topbar__item">
+      <a href="#" class="topbar__link js-signup-link">Sign Up</a>
+    </div>
+    <div class="topbar__item">
+      <a href="#" class="topbar__link lang">زبان تبدیل کریں</a>
+    </div>
+  </div>
+</div>
+
+<div class="header">
+  <div class="header__container">
+    <button class="header__menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu-drawer">
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+    </button>
+
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="Images/logo.png" alt="Daraz Logo" />
+      </a>
+    </div>
+
+    <div class="header__search">
+      <div class="header__search-box">
+        <form method="GET" autocomplete="off">
+          <div class="header__search-container">
+            <input type="search" name="q" id="searchInput" placeholder="Search in Daraz" class="header__search-input" />
+            <div class="header__search-button">
+              <a href="#" class="header__search-submit">SEARCH</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="header__cart">
+      <a href="#">
+        <span class="header__cart-icon">
+          <img src="Images/cart-icon.svg" alt="Cart" width="30" height="30">
+        </span>
+      </a>
+    </div>
+  </div>
+  <!-- hot-links injected here by components.js when data-hotlinks="true" -->
+</div>
+
+<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+<aside class="mobile-menu-drawer" id="mobile-menu-drawer" aria-hidden="true">
+  <div class="mobile-menu-header">
+    <h2>Menu</h2>
+    <button class="mobile-menu-close" type="button" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="mobile-menu-section">
+    <ul class="mobile-menu-links" id="mobile-menu-top-links"></ul>
+  </div>
+  <!-- mobile categories injected by components.js when data-hotlinks="true" -->
+</aside>
